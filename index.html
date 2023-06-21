@@ -22,11 +22,21 @@
         rel="stylesheet">
     <!--External CSS -->
     <link rel="stylesheet" href="style.css">
-    <!--Jquery calismiyor-->
-    <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="http://code.jquery.com/ui/1.12.1/jquery.ui.js"></script>
+    <!--Jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.js"
+        integrity="sha512-8Z5++K1rB3U+USaLKG6oO8uWWBhdYsM3hmdirnOEWp8h2B1aOikj5zBzlXs8QOrvY9OxEnD2QDkbSKKpfqcIWw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.slim.js"
+        integrity="sha512-JC/KiiKXoc40I1lqZUnoRQr96y5/q4Wxrq5w+WKqbg/6Aq0ivpS2oZ24x/aEtTRwxahZ/KOApxy8BSZOeLXMiA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!--fontawesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- MDB -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/mdb.min.css" />
 </head>
 
 <body data-bs-spy="scrool" data-bs-target="#navbar_id"> <!---->
@@ -35,8 +45,8 @@
     <!--start nav  codes-->
     <nav id="navbar_id" class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container"> <!--container-fluid-->
-            <i class="fa-brands fa-bootstrap p-3" style="color: #fb04ce;"></i>
-            <a class="navbar-brand" href="index.html">AnaSayfa</a>
+            <i class="fa-brands fa-bootstrap p-3" style="color: #008efa;"></i>
+            <a class="navbar-brand" href="index.html">Anasayfa</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -45,19 +55,17 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Ev</a>
+                        <a class="nav-link active p-3" aria-current="page" href="#">Ev</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
+
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             <i class="fa-solid fa-user-plus" style="color: #0058f0;"></i>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Login</a></li>
-                            <li><a class="dropdown-item" href="#">Register</a></li>
+                            <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#loginid">Login</a></li>
+                            <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#registerId">Register</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
@@ -66,20 +74,151 @@
                     </li>
 
                 </ul>
+                <!--JS Dark Mode-->
                 <ul class="navbar-nav me-auto mb-2 mb-lg-o">
                     <li class="nav-item">
                         <button class="btn btn-primary" onclick="darkModu()"><i class="fa-solid fa-moon"></i></button>
                     </li>
                 </ul>
+                <!--JS Dark Mode-->
+
+                <!--Search -->
                 <form class="d-flex" role="search">
-                    <input id="tags" class="form-control me-2" type="search" placeholder="Arama yapın..." aria-label="Search">
+                    <input id="tags" class="form-control me-2" type="search" placeholder="Arama yapın..."
+                        aria-label="Search">
                     <button class="btn btn-primary" type="submit">Ara</button>
                 </form>
+                <!--Search -->
             </div>
         </div>
     </nav>
     <!--end nav codes-->
+    $<!-- Modal trigger button -->
+    $<!-- Modal trigger button -->
 
+    <!-- Register Start-->
+    <div class="modal fade" id="registerId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
+        aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">Register</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <!-- 2 column grid layout with text inputs for the first and last names -->
+                        <div class="row mb-4">
+                          <div class="col">
+                            <div class="form-outline">
+                              <input type="text" id="form3Example1" class="form-control" />
+                              <label class="form-label" for="form3Example1">First name</label>
+                            </div>
+                          </div>
+                          <div class="col">
+                            <div class="form-outline">
+                              <input type="text" id="form3Example2" class="form-control" />
+                              <label class="form-label" for="form3Example2">Last name</label>
+                            </div>
+                          </div>
+                        </div>
+                      
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                          <input type="email" id="form3Example3" class="form-control" />
+                          <label class="form-label" for="form3Example3">Email address</label>
+                        </div>
+                      
+                        <!-- Password input -->
+                        <div class="form-outline mb-4">
+                          <input type="password" id="form3Example4" class="form-control" />
+                          <label class="form-label" for="form3Example4">Password</label>
+                        </div>
+                      
+                        <!-- Checkbox -->
+                        <div class="form-check d-flex justify-content-center mb-4">
+                          <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked />
+                          <label class="form-check-label" for="form2Example33">
+                            Subscribe to our newsletter
+                          </label>
+                        </div>
+                      
+                        <!-- Submit button -->
+                        <button type="submit" class="btn btn-primary btn-block mb-4">Sign up</button>
+                      
+                        <!-- Register buttons -->
+                        <div class="text-center">
+                          <p>or sign up with:</p>
+                          <button type="button" class="btn btn-secondary btn-floating mx-1">
+                            <i class="fab fa-facebook-f"></i>
+                          </button>
+                      
+                          <button type="button" class="btn btn-secondary btn-floating mx-1">
+                            <i class="fab fa-google"></i>
+                          </button>
+                      
+                          <button type="button" class="btn btn-secondary btn-floating mx-1">
+                            <i class="fab fa-twitter"></i>
+                          </button>
+                      
+                          <button type="button" class="btn btn-secondary btn-floating mx-1">
+                            <i class="fab fa-github"></i>
+                          </button>
+                        </div>
+                      </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+ <!-- Register End-->
+
+    <!-- Login Start-->
+    <div class="modal fade" id="loginid" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
+        aria-labelledby="modalTitleId" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">Register</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <!-- Name input -->
+                        <div class="form-outline mb-4">
+                            <input type="text" id="form5Example1" class="form-control" />
+                            <label class="form-label" for="form5Example1">Name</label>
+                        </div>
+
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                            <input type="email" id="form5Example2" class="form-control" />
+                            <label class="form-label" for="form5Example2">Email address</label>
+                        </div>
+
+                        <!-- Checkbox -->
+                        <div class="form-check d-flex justify-content-center mb-4">
+                            <input class="form-check-input me-2" type="checkbox" value="" id="form5Example3" checked />
+                            <label class="form-check-label" for="form5Example3">
+                                I have read and agree to the terms
+                            </label>
+                        </div>
+
+                        <!-- Submit button -->
+                        <button type="submit" class="btn btn-primary btn-block mb-4">Subscribe</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Kapat</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Login End -->
 
     <!--start header  codes-->
     <header id="header_id">
@@ -98,14 +237,29 @@
     <!--start main codes-->
     <main id="main_id">
         <section>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum blanditiis numquam, unde, facere distinctio illo, quia debitis id amet nihil saepe ipsa maiores velit aperiam? Vero veniam aliquid atque cumque.
-            Temporibus, id asperiores vero quo labore aperiam adipisci, pariatur dolorum soluta sed nobis delectus accusamus! Officia ducimus illo repellat doloremque quia! Sapiente officiis velit debitis alias quo, dicta provident perferendis.
-            Quos ullam aut vel temporibus harum tempora placeat fugit alias minima commodi voluptatem repellendus nobis, eum nostrum. Exercitationem impedit quisquam repellendus optio ut ipsum nesciunt! Eaque accusantium sapiente nihil ab.
-            Magnam nostrum fugit voluptas, at reprehenderit eveniet tempora temporibus tenetur ad quidem accusantium deleniti ipsam ullam placeat soluta voluptatum necessitatibus accusamus numquam, quis earum perferendis culpa odit veniam! Eaque, maxime.
-            Sequi, officia nisi. Qui, voluptatem repellendus repudiandae aliquam aperiam debitis hic? Voluptatibus eum quas labore libero obcaecati, quibusdam, minus nostrum praesentium omnis quisquam eius dolore animi quod natus ex enim?
-            Magnam quis amet consectetur alias, mollitia porro animi sequi iusto? Dignissimos ipsum velit magnam unde similique mollitia in obcaecati, quam molestias maiores incidunt quo! Magni assumenda laudantium ex cumque fuga.
-            Officiis a blanditiis mollitia commodi, minima cupiditate ducimus voluptatum inventore autem nihil praesentium quam corporis molestiae, vitae quasi dolorem sint aliquid eum? Perspiciatis dolores ipsa quod ea nesciunt alias iusto!
-            Dolor praesentium dicta totam sunt eos magni quo nesciunt nihil distinctio a ipsam repudiandae provident consequuntur ut nobis cum beatae, qui illum animi nulla aliquid sequi minima, sit cupiditate. Cum?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum blanditiis numquam, unde, facere
+                distinctio illo, quia debitis id amet nihil saepe ipsa maiores velit aperiam? Vero veniam aliquid atque
+                cumque.
+                Temporibus, id asperiores vero quo labore aperiam adipisci, pariatur dolorum soluta sed nobis delectus
+                accusamus! Officia ducimus illo repellat doloremque quia! Sapiente officiis velit debitis alias quo,
+                dicta provident perferendis.
+                Quos ullam aut vel temporibus harum tempora placeat fugit alias minima commodi voluptatem repellendus
+                nobis, eum nostrum. Exercitationem impedit quisquam repellendus optio ut ipsum nesciunt! Eaque
+                accusantium sapiente nihil ab.
+                Magnam nostrum fugit voluptas, at reprehenderit eveniet tempora temporibus tenetur ad quidem accusantium
+                deleniti ipsam ullam placeat soluta voluptatum necessitatibus accusamus numquam, quis earum perferendis
+                culpa odit veniam! Eaque, maxime.
+                Sequi, officia nisi. Qui, voluptatem repellendus repudiandae aliquam aperiam debitis hic? Voluptatibus
+                eum quas labore libero obcaecati, quibusdam, minus nostrum praesentium omnis quisquam eius dolore animi
+                quod natus ex enim?
+                Magnam quis amet consectetur alias, mollitia porro animi sequi iusto? Dignissimos ipsum velit magnam
+                unde similique mollitia in obcaecati, quam molestias maiores incidunt quo! Magni assumenda laudantium ex
+                cumque fuga.
+                Officiis a blanditiis mollitia commodi, minima cupiditate ducimus voluptatum inventore autem nihil
+                praesentium quam corporis molestiae, vitae quasi dolorem sint aliquid eum? Perspiciatis dolores ipsa
+                quod ea nesciunt alias iusto!
+                Dolor praesentium dicta totam sunt eos magni quo nesciunt nihil distinctio a ipsam repudiandae provident
+                consequuntur ut nobis cum beatae, qui illum animi nulla aliquid sequi minima, sit cupiditate. Cum?</p>
         </section>
     </main>
     <!--end main codes-->
@@ -116,7 +270,10 @@
     </footer>
     <!--end footer codes-->
 
-
+    <!--Up Station -->
+    <a href="#navbar_id" id="back_top" class="btn btn-primary"><i class="fa-solid fa-arrow-up"
+            style="color: #015af4;"></i></a>
+    <!--Up Station -->
 
     <!--end codes-->
 

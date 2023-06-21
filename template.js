@@ -1,8 +1,8 @@
 // Dark Mode
 
 let darkModu = () => {
-    alert('DARK MODU');
-    window.document.classList.toggle("dark_mode")
+    //alert('DARK MODU');
+    document.body.classList.toggle("dark_mode")
 }
 
 // Footer
