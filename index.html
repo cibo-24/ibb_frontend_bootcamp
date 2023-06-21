@@ -2,60 +2,118 @@
 <html lang="en">
 
 <head>
-  <title>One Page</title>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="author" content="Kenan Cibooglu" />
-  <meta name="description" content="for one page" />
-  <meta name="keyword" content="Html5,Css3,Js,React,BootStrap5" />
+    <title>One Page</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Kenan Cibooglu" />
+    <meta name="description" content="for one page" />
+    <meta name="keyword" content="Html5,Css3,Js,React,BootStrap5" />
 
-  <!-- Bootstrap CSS v5.2.1 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <title>Front-End Developer</title>
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    
     <!--Font Family-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<!--Google Font-->
-<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--Google Font-->
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-  <header>
+<body data-bs-spy="scrool" data-bs-target="#navbar_id"> <!---->
+
     <!--start codes-->
-    
+
+    <!--start nav  codes-->
+    <nav id="navbar_id" class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container"> <!--container-fluid-->
+            <i class="fa-solid fa-code"></i>
+            <a class="navbar-brand" href="index.html">AnaSayfa</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Arama yapın..." aria-label="Search">
+                    <button class="btn btn-primary" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!--end nav codes-->
+
+
+    <!--start header  codes-->
+    <header id="header_id">
+        <div class="text-white">
+            <div class="container text-center">
+                <div class="p-5 text-uppercase display-4">Frontend Eğitimimize Hoşgeldiniz</div>
+                <h4>Html5 Css3 JS React</h4>
+                <a href="" class="btn btn-primary">Linkedln</a>
+                <a href="" class="btn btn-danger">Blog</a>
+                <a href="" class="btn btn-success">Youtube</a>
+            </div>
+        </div>
+    </header>
+    <!--end header codes-->
+
+    <!--start main codes-->
+    <main id="main_id">
+
+    </main>
+    <!--end main codes-->
+
+    <!--start footer codes-->
+    <footer id="footer_id"></footer>
+    <!--end footer codes-->
+
+
+
     <!--end codes-->
 
 
 
 
-    <!-- place navbar here -->
-    <h1 class="text-primary text-center">IBB Veri and Ecodation</h1>
-    <p id="lorem" class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptates esse saepe odio ab tempora porro ea quos, hic exercitationem consequatur. Delectus at ullam explicabo temporibus, iure eum nam maxime!
-    Quo, quam sit ea dolores quia omnis. Repellat excepturi porro voluptatibus maiores minus dignissimos, accusantium iure rem optio tempore quo dolorem labore cum inventore ducimus ipsum totam, odit ipsam nulla.
-    Nesciunt, aliquid iste placeat nam odit quod consequuntur quas recusandae debitis id tempora quis itaque laboriosam in corrupti sed eos adipisci omnis aliquam eius necessitatibus nulla aspernatur voluptatum. Doloribus, cum.</p>
-  </header>
-  <main>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
 
-  </main>
-  <footer>
-    <!-- place footer here -->
-  </footer>
-
-
-  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
     <!--external JS-->
     <script src="/template.js"></script>
-  <!-- Bootstrap JavaScript Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
-  </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-  </script>
 </body>
 
 </html>

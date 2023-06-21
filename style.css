@@ -1,0 +1,128 @@
+/* 
+Project: One Page
+Author : Kenan Cibooğlu
+Date   : 14 / June / 2023
+Version: v.1
+*/
+
+/* ############################################### */
+/* Root */
+
+
+
+
+
+/* ############################################### */
+/* Common Propert */
+
+*{
+    margin : 0;
+    padding: 0px;
+    box-sizing: border-box; 
+}
+
+html {
+    font-size : 20px;
+
+}
+
+body{
+    font-family: 'Manrope', sans-serif;
+    line-height: 1.2;
+    position: relative; /* familie'ye göre ayarlama yapar. Yani anne babaya göre ayar çeker */
+}
+
+a{
+     text-decoration: none; /* altı yazılı yeri siler */
+}
+
+ul{
+    list-style-type: none;
+    color: brown;
+}
+
+
+img {
+    width: 1000px;
+    height: auto;
+
+    
+}
+img:hover {
+    opacity: 0.4;
+    box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.8);
+    transition: 3s all;
+    cursor: pointer; /* el işareti yapar imleci */
+}
+
+i{
+    font-size: 1.5rem; /* html içerisine yazılan değerin 1.5 katını alır. rem özelliği */
+}
+
+
+.my_clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+/* my special Size */
+.fSize1 {
+    font-size: 1rem;
+}
+
+.fSize2 {
+    font-size: 2rem;
+}
+
+.fSize3 {
+    font-size: 3rem;
+}
+
+.fSize4 {
+    font-size: 4rem;
+}
+
+/* Line-clamp */
+
+.line-clamp5{  
+    display: -webkit-box;  /* diğer web sayflarında da çalışsın */
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+    /* paragrafa ozellik atadık */
+}
+
+.line-clamp8{  
+    display: -webkit-box;  /* diğer web sayflarında da çalışsın */
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 8;
+    /* paragrafa ozellik atadık */
+}
+
+.line-clamp10{  
+    display: -webkit-box;  /* diğer web sayflarında da çalışsın */
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 10;
+    /* paragrafa ozellik atadık */
+}
+
+/* ############################################### */
+/* Header */
+header {
+    background-image: url("https://picsum.photos/id/670/900/500?grayscale&blur=2");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 60% 40%;
+    z-index: -1;
+    height: 30rem;
+    padding-top: 5rem ;
+    opacity: 0.9;
+    box-shadow: 2px 1px 4px 1px red;
+    transition: 3s all;
+    cursor: pointer;
+
+}
