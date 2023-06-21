@@ -55,8 +55,13 @@ img:hover {
     cursor: pointer; /* el işareti yapar imleci */
 }
 
+
 i{
     font-size: 1.5rem; /* html içerisine yazılan değerin 1.5 katını alır. rem özelliği */
+}
+
+.textHeader{
+    color: black;
 }
 
 
