@@ -7,10 +7,10 @@ Version: v.1
 
 /* ############################################### */
 /* Root */
-
-
-
-
+/* root bolumu bir kere yazılanı baska yerlerde de kullanmaya yarar */
+:root{
+    --templateBgColor:rgb(60, 113, 165);  
+}
 
 /* ############################################### */
 /* Common Propert */
@@ -55,10 +55,10 @@ img:hover {
     cursor: pointer; /* el işareti yapar imleci */
 }
 
-
 i{
     font-size: 1.5rem; /* html içerisine yazılan değerin 1.5 katını alır. rem özelliği */
 }
+
 
 .textHeader{
     color: black;
@@ -130,4 +130,19 @@ header {
     transition: 3s all;
     cursor: pointer;
 
+}
+
+/* ############################################### */
+/* Navbar */
+.dark_mode{
+    background-color: var(--templateBgColor);  /*   yukarıda root'ta olusturduk.*/
+    color: #ffffff;
+}
+
+/* Footer */
+footer{
+    min-height: 7rem;
+    width: auto;
+    background-color: black;
+    color: white;
 }

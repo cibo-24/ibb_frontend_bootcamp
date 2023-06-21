@@ -13,24 +13,29 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    
+
     <!--Font Family-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!--Google Font-->
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
+    <!--External CSS -->
     <link rel="stylesheet" href="style.css">
+    <!--Jquery calismiyor-->
+    <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery.ui.js"></script>
+    <!--fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body data-bs-spy="scrool" data-bs-target="#navbar_id"> <!---->
 
     <!--start codes-->
-
     <!--start nav  codes-->
-    <nav id="navbar_id" class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav id="navbar_id" class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container"> <!--container-fluid-->
-            <i class="fa-solid fa-code"></i>
+            <i class="fa-brands fa-bootstrap p-3" style="color: #fb04ce;"></i>
             <a class="navbar-brand" href="index.html">AnaSayfa</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -48,21 +53,26 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Menü
+                            <i class="fa-solid fa-user-plus" style="color: #0058f0;"></i>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Login</a></li>
+                            <li><a class="dropdown-item" href="#">Register</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </li>
-                    
+
+                </ul>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-o">
+                    <li class="nav-item">
+                        <button class="btn btn-primary" onclick="darkModu()"><i class="fa-solid fa-moon"></i></button>
+                    </li>
                 </ul>
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Arama yapın..." aria-label="Search">
+                    <input id="tags" class="form-control me-2" type="search" placeholder="Arama yapın..." aria-label="Search">
                     <button class="btn btn-primary" type="submit">Ara</button>
                 </form>
             </div>
@@ -87,12 +97,23 @@
 
     <!--start main codes-->
     <main id="main_id">
-
+        <section>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum blanditiis numquam, unde, facere distinctio illo, quia debitis id amet nihil saepe ipsa maiores velit aperiam? Vero veniam aliquid atque cumque.
+            Temporibus, id asperiores vero quo labore aperiam adipisci, pariatur dolorum soluta sed nobis delectus accusamus! Officia ducimus illo repellat doloremque quia! Sapiente officiis velit debitis alias quo, dicta provident perferendis.
+            Quos ullam aut vel temporibus harum tempora placeat fugit alias minima commodi voluptatem repellendus nobis, eum nostrum. Exercitationem impedit quisquam repellendus optio ut ipsum nesciunt! Eaque accusantium sapiente nihil ab.
+            Magnam nostrum fugit voluptas, at reprehenderit eveniet tempora temporibus tenetur ad quidem accusantium deleniti ipsam ullam placeat soluta voluptatum necessitatibus accusamus numquam, quis earum perferendis culpa odit veniam! Eaque, maxime.
+            Sequi, officia nisi. Qui, voluptatem repellendus repudiandae aliquam aperiam debitis hic? Voluptatibus eum quas labore libero obcaecati, quibusdam, minus nostrum praesentium omnis quisquam eius dolore animi quod natus ex enim?
+            Magnam quis amet consectetur alias, mollitia porro animi sequi iusto? Dignissimos ipsum velit magnam unde similique mollitia in obcaecati, quam molestias maiores incidunt quo! Magni assumenda laudantium ex cumque fuga.
+            Officiis a blanditiis mollitia commodi, minima cupiditate ducimus voluptatum inventore autem nihil praesentium quam corporis molestiae, vitae quasi dolorem sint aliquid eum? Perspiciatis dolores ipsa quod ea nesciunt alias iusto!
+            Dolor praesentium dicta totam sunt eos magni quo nesciunt nihil distinctio a ipsam repudiandae provident consequuntur ut nobis cum beatae, qui illum animi nulla aliquid sequi minima, sit cupiditate. Cum?</p>
+        </section>
     </main>
     <!--end main codes-->
 
     <!--start footer codes-->
-    <footer id="footer_id"></footer>
+    <footer id="footer_id" class="bg-dark">
+        <div class="text-center p-5" id="copy_right">2021-<span id="date_id"></span> &copy; Bütün Hakları Saklıdır</div>
+    </footer>
     <!--end footer codes-->
 
 
