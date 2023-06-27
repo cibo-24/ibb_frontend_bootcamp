@@ -22,7 +22,7 @@ Version: v.1
 }
 
 html {
-    font-size : 20px;
+    font-size : 15px;
 
 }
 
@@ -61,7 +61,7 @@ i{
 
 
 .textHeader{
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -71,7 +71,16 @@ i{
     clear: both;
 }
 
+.myHeading{
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    text-shadow: 0.4px -0.9px rgb(0,0,0,0.9);
+    opacity: 0.7;
+}
 
+/* ############################################### */
 /* my special Size */
 .fSize1 {
     font-size: 1rem;
@@ -89,7 +98,16 @@ i{
     font-size: 4rem;
 }
 
+/* ############################################### */
 /* Line-clamp */
+.line-clamp4{  
+    display: -webkit-box;  /* diğer web sayflarında da çalışsın */
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    /* paragrafa ozellik atadık */
+}
+
 
 .line-clamp5{  
     display: -webkit-box;  /* diğer web sayflarında da çalışsın */
@@ -118,7 +136,7 @@ i{
 /* ############################################### */
 /* Header */
 header {
-    background-image: url("https://picsum.photos/id/670/900/500?grayscale&blur=2");
+    background-image: url("/img/background-image.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 60% 40%;
@@ -133,12 +151,27 @@ header {
 }
 
 /* ############################################### */
+/* Main */
+#messages{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+#messages i{
+    color:blue;
+    font-size: 5rem;
+}
+
+
+
+/* ############################################### */
 /* Navbar */
 .dark_mode{
     background-color: var(--templateBgColor);  /*   yukarıda root'ta olusturduk.*/
     color: #ffffff;
 }
 
+/* ############################################### */
 /* Footer */
 footer{
     min-height: 7rem;
@@ -147,6 +180,7 @@ footer{
     color: white;
 }
 
+/* ############################################### */
 /* Back top */
 #back_top{
     position: fixed;
