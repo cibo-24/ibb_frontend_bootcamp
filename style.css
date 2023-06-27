@@ -78,6 +78,7 @@ i{
     text-transform: uppercase;
     text-shadow: 0.4px -0.9px rgb(0,0,0,0.9);
     opacity: 0.7;
+    padding: 10px;
 }
 
 /* ############################################### */
@@ -132,6 +133,14 @@ i{
     -webkit-line-clamp: 10;
     /* paragrafa ozellik atadık */
 }
+.line-clamp20{  
+    display: -webkit-box;  /* diğer web sayflarında da çalışsın */
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 20;
+    /* paragrafa ozellik atadık */
+}
+
 
 /* ############################################### */
 /* Header */
@@ -151,7 +160,7 @@ header {
 }
 
 /* ############################################### */
-/* Main */
+/* Main- Messages */
 #messages{
     margin-top: 3rem;
     margin-bottom: 3rem;
@@ -162,7 +171,19 @@ header {
     font-size: 5rem;
 }
 
-
+/* Parallax */
+#parallax{
+    background-color: transparent;
+    background-image: url('/img/main-background.jpg');
+    background-size: cover;
+    height: 35rem;
+    padding: 2rem;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#parallax h2,p{
+    color: black;
+}
 
 /* ############################################### */
 /* Navbar */
