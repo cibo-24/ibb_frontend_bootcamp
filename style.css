@@ -8,35 +8,35 @@ Version: v.1
 /* ############################################### */
 /* Root */
 /* root bolumu bir kere yazılanı baska yerlerde de kullanmaya yarar */
-:root{
-    --templateBgColor:rgb(60, 113, 165);  
+:root {
+    --templateBgColor: rgb(60, 113, 165);
 }
 
-/* ############################################### */
-/* Common Propert */
-
-*{
-    margin : 0;
+* {
+    margin: 0;
     padding: 0px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 html {
-    font-size : 15px;
+    font-size: 15px;
+    scroll-behavior: smooth;
 
 }
 
-body{
+body {
     font-family: 'Manrope', sans-serif;
     line-height: 1.2;
-    position: relative; /* familie'ye göre ayarlama yapar. Yani anne babaya göre ayar çeker */
+    position: relative;
+    /* familie'ye göre ayarlama yapar. Yani anne babaya göre ayar çeker */
 }
 
-a{
-     text-decoration: none; /* altı yazılı yeri siler */
+a {
+    text-decoration: none;
+    /* altı yazılı yeri siler */
 }
 
-ul{
+ul {
     list-style-type: none;
     color: brown;
 }
@@ -46,37 +46,58 @@ img {
     width: 1000px;
     height: auto;
 
-    
+
 }
+
 img:hover {
     opacity: 0.4;
-    box-shadow: 1px 1px 4px 1px rgba(0,0,0,0.8);
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.8);
     transition: 3s all;
-    cursor: pointer; /* el işareti yapar imleci */
+    cursor: pointer;
+    /* el işareti yapar imleci */
 }
 
-i{
-    font-size: 1.5rem; /* html içerisine yazılan değerin 1.5 katını alır. rem özelliği */
-}
-
-
-.textHeader{
-    color: rgb(255, 255, 255);
+i {
+    font-size: 1.5rem;
+    /* html içerisine yazılan değerin 1.5 katını alır. rem özelliği */
 }
 
 
-.my_clearfix::after{
+.textHeader {
+    color: #8ec54f;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+
+.textHeader2 {
+    color: #023047;
+    font-family: monospace;
+    font-family: 'Dancing Script', cursive;
+}
+
+
+.textHeader3 {
+    color: #021720;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+
+
+.my_clearfix::after {
     content: '';
     display: block;
     clear: both;
 }
 
-.myHeading{
+.myHeading {
     text-align: center;
     text-decoration: underline;
     margin-bottom: 2rem;
     text-transform: uppercase;
-    text-shadow: 0.4px -0.9px rgb(0,0,0,0.9);
+    text-shadow: 0.4px -0.9px rgb(0, 0, 0, 0.9);
     opacity: 0.7;
     padding: 10px;
 }
@@ -101,8 +122,9 @@ i{
 
 /* ############################################### */
 /* Line-clamp */
-.line-clamp4{  
-    display: -webkit-box;  /* diğer web sayflarında da çalışsın */
+.line-clamp4 {
+    display: -webkit-box;
+    /* diğer web sayflarında da çalışsın */
     overflow: hidden;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
@@ -110,31 +132,36 @@ i{
 }
 
 
-.line-clamp5{  
-    display: -webkit-box;  /* diğer web sayflarında da çalışsın */
+.line-clamp5 {
+    display: -webkit-box;
+    /* diğer web sayflarında da çalışsın */
     overflow: hidden;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 5;
     /* paragrafa ozellik atadık */
 }
 
-.line-clamp8{  
-    display: -webkit-box;  /* diğer web sayflarında da çalışsın */
+.line-clamp8 {
+    display: -webkit-box;
+    /* diğer web sayflarında da çalışsın */
     overflow: hidden;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 8;
     /* paragrafa ozellik atadık */
 }
 
-.line-clamp10{  
-    display: -webkit-box;  /* diğer web sayflarında da çalışsın */
+.line-clamp10 {
+    display: -webkit-box;
+    /* diğer web sayflarında da çalışsın */
     overflow: hidden;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 10;
     /* paragrafa ozellik atadık */
 }
-.line-clamp20{  
-    display: -webkit-box;  /* diğer web sayflarında da çalışsın */
+
+.line-clamp20 {
+    display: -webkit-box;
+    /* diğer web sayflarında da çalışsın */
     overflow: hidden;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 20;
@@ -151,7 +178,7 @@ header {
     background-position: 60% 40%;
     z-index: -1;
     height: 30rem;
-    padding-top: 5rem ;
+    padding-top: 5rem;
     opacity: 0.9;
     box-shadow: 2px 1px 4px 1px red;
     transition: 3s all;
@@ -161,54 +188,214 @@ header {
 
 /* ############################################### */
 /* Main- Messages */
-#messages{
+#messages {
     margin-top: 3rem;
     margin-bottom: 3rem;
+    background-color:#E0F2E9;
+    box-shadow: 2px 1px 4px 1px red;
 }
 
-#messages i{
-    color:blue;
+#messages i {
+    color: blue;
     font-size: 5rem;
 }
 
 /* Parallax */
-#parallax{
-    background-color: transparent;
+#parallax {
+    
     background-image: url('/img/main-background.jpg');
     background-size: cover;
     height: 35rem;
     padding: 2rem;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    box-shadow: 2px 1px 4px 1px red;
+    font-family: monospace;
+    
 }
-#parallax h2,p{
+
+#parallax h2,
+p {
     color: black;
+    font-weight: bold;
 }
+
+.boxAbout{
+    border: solid 2px #021720;
+    box-shadow: 2px 2px 1px 1px #023047;
+    
+}
+.boxAbout2{
+    border: solid 2px #021720;
+    box-shadow: 2px 2px 1px 1px #023047;
+}
+
+
+/* newspaper */
+#newspaper {
+    height: auto;
+    padding: 2rem;
+    background-image: url(/img/main-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 2px 1px 4px 1px red;
+}
+
+
+.blog-card-blog {
+    margin-top: 30px;
+    
+}
+
+.blog-card {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 6px;
+    color: rgba(0, 0, 0, 0.87);
+    background: #fff;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.blog-card .blog-card-image {
+    height: 60%;
+    position: relative;
+    overflow: hidden;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: -30px;
+    border-radius: 6px;
+    box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.blog-card .blog-card-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    pointer-events: none;
+}
+
+.blog-card .blog-table {
+    padding: 15px 30px;
+}
+
+.blog-table {
+    margin-bottom: 0px;
+}
+
+.blog-category {
+    position: relative;
+    line-height: 0;
+    margin: 15px 0;
+}
+
+.blog-text-success {
+    color: #28a745 !important;
+}
+
+.blog-card-blog .blog-card-caption {
+    margin-top: 5px;
+}
+
+.blog-card-caption {
+    font-weight: 700;
+    font-family: "Roboto Slab", "Times New Roman", serif;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.blog-card-caption,
+.blog-card-caption a {
+    color: #333;
+    text-decoration: none;
+}
+
+.paragraf1 {
+    color: #3C4857;
+}
+
+.paragraf1 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.blog-card .ftr {
+    margin-top: 15px;
+}
+
+.blog-card .ftr .author {
+    color: #888;
+}
+
+.blog-card .ftr div {
+    display: inline-block;
+}
+
+.blog-card .author .avatar {
+    width: 36px;
+    height: 36px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.blog-card .ftr .stats {
+    position: relative;
+    top: 1px;
+    font-size: 14px;
+}
+
+.blog-card .ftr .stats {
+    float: right;
+    line-height: 30px;
+}
+
+/* newspaper end */
+
+
+
+/* blog */
+#blog {
+    background-color: rgb(240, 208, 165);
+    box-shadow: 2px 1px 4px 1px red;
+}
+
+
 
 /* ############################################### */
 /* Navbar */
-.dark_mode{
-    background-color: var(--templateBgColor);  /*   yukarıda root'ta olusturduk.*/
+.dark_mode {
+    background-color: var(--templateBgColor);
+    /*   yukarıda root'ta olusturduk.*/
     color: #ffffff;
 }
 
 /* ############################################### */
 /* Footer */
-footer{
+footer {
     min-height: 7rem;
     width: auto;
     background-color: black;
     color: white;
+    box-shadow: 2px 1px 4px 1px red;
 }
 
 /* ############################################### */
 /* Back top */
-#back_top{
+#back_top {
     position: fixed;
     right: 0;
     bottom: 0;
 }
 
-#back_top:hover{
+#back_top:hover {
     opacity: 1;
 }

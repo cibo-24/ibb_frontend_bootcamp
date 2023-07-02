@@ -20,6 +20,9 @@
     <!--Google Font-->
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
     <!--External CSS -->
     <link rel="stylesheet" href="style.css">
     <!--Jquery -->
@@ -37,16 +40,25 @@
     <!-- MDB -->
     <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/mdb.min.css" />
+
+
+    <style>
+        .boldstyle {
+            font-weight: bold;
+        }
+    </style>
 </head>
 
-<body data-bs-spy="scrool" data-bs-target="#navbar_id"> <!---->
+<body data-bs-spy="scrool" data-bs-target="#navbar_id">
 
     <!--start codes-->
     <!--start nav  codes-->
-    <nav id="navbar_id" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav id="navbar_id" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container"> <!--container-fluid-->
-            <i class="fa-brands fa-bootstrap p-3" style="color: #008efa;"></i>
-            <a class="navbar-brand" href="index.html">Anasayfa</a>
+            <i class="fa-brands fa-free-code-camp fa-xl p-3 " style="color: #008efa;"></i>
+            <i class="fa-brands fa-stack-overflow fa-xl p-3" style="color: #008efa;"></i>
+            <i class="fa-solid fa-code fa-xl p-3" style="color: #008efa;"></i>
+            <a class="navbar-brand p-2" href="index.html">Anasayfa</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -55,33 +67,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active p-3" aria-current="page" href="#">Ev</a>
+                        <a class="nav-link active p-3" aria-current="page" href="#works">Çalışmalarımız</a>
                     </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <i class="fa-solid fa-user-plus" style="color: #008efa;"></i>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#loginid">Login</a></li>
-                            <li><a class="dropdown-item" data-bs-toggle="modal"
-                                    data-bs-target="#registerId">Register</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-
-                </ul>
-                <!--JS Dark Mode-->
-                <ul class="navbar-nav me-auto mb-2 mb-lg-o">
                     <li class="nav-item">
-                        <button class="btn btn-primary" onclick="darkModu()"><i class="fa-solid fa-moon"></i></button>
+                        <a class="nav-link active p-3" aria-current="page" href="#parallax">Hakkımızda</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link active p-3" aria-current="page" href="#newspaper">Haberler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active p-3" aria-current="page" href="#blog">Blog</a>
+                    </li>
+
                 </ul>
-                <!--JS Dark Mode-->
 
                 <!--Search -->
                 <form class="d-flex" role="search">
@@ -90,6 +88,48 @@
                     <button class="btn btn-primary" type="submit">Ara</button>
                 </form>
                 <!--Search -->
+
+                <!--JS Dark Mode-->
+                <ul class="navbar-nav me-auto mb-lg-o m-lg-2 p-2">
+                    <li class="nav-item">
+                        <button class="btn btn-primary" onclick="darkModu()"><i class="fa-solid fa-moon"></i></button>
+                    </li>
+                </ul>
+                <!--JS Dark Mode-->
+
+
+                <!--Register and Login-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="fa-solid fa-circle-user fa-2xl " style="color: #ffffff; float: right;"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#loginid"
+                                style="color: rgb(0, 0, 0); font-weight: bold;">Login</a></li>
+                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#registerId"
+                                style="color: rgb(0, 0, 0); font-weight: bold;">Register</a></li>
+
+                    </ul>
+                </li>
+                <!--Register and Login-->
+
+
+                <!--Language-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="fa-solid fa-globe fa-2xl" style="color: #f7f7f7; float: right;"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#"
+                                style="color: red; font-weight: bold;">Turkish</a></li>
+                        <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#"
+                                style="color: blue; font-weight: bold;">English</a></li>
+
+                    </ul>
+                </li>
+                <!--Language-->
             </div>
         </div>
     </nav>
@@ -225,82 +265,346 @@
     <header id="header_id">
         <div class="text-white">
             <div class="container text-center">
-                <div class="p-5 text-uppercase display-4 textHeader">Frontend Eğitimimize Hoşgeldiniz</div>
-                <h4 class="textHeader">Html5 Css3 JS React</h4>
-                <a href="https://www.linkedin.com/in/cibokenan24/" class="btn btn-primary">Linkedin</a>
-                <a href="" class="btn btn-danger">Blog</a>
-                <a href="" class="btn btn-success">Youtube</a>
+                <div class="p-5  display-4  textHeader2"><i class="fa-brands fa-phoenix-framework fa-xl"
+                        style="color: #023047;"></i>Ecodation-Veri Laboratuvarı</div>
+                <div class="p-1  display-4 textHeader" style="font-size: 80px;">Front-End BootCamp</div>
+                <h4 class="textHeader3 p-2">Social Media</h4>
+                <a href="https://www.linkedin.com/in/cibokenan24/" class="btn btn-primary p-2"><i
+                        class="fa-brands fa-linkedin fa-xl"></i>
+                    Linkedin</a>
+                <a href="https://github.com/cibo-24" class="btn btn-danger"><i class="fa-brands fa-github fa-xl"></i>
+                    Github</a>
+                <a href="https://discord.gg/jCAbuSW3" class="btn btn-success"><i class="fa-brands fa-discord fa-xl"></i>
+                    Discord</a>
+                <a href="https://web.telegram.org/a/" class="btn btn-dark"><i class="fa-brands fa-telegram fa-xl"></i>
+                    Telegram</a>
+
             </div>
         </div>
     </header>
     <!--end header codes-->
 
     <!--start main codes-->
-    <!--messages start-->
     <main id="main_id">
+        <!--messages start-->
         <section id="messages">
             <div>
-                <h2 class="myHeading">Çalışmalarımız</h2>
+                <h2 id="works" class="text-center p-2" style="font-weight: bold;">Çalışmalarımız</h2>
             </div>
             <div class="container">
                 <div class="row">
                     <div class="text-center col-12 col-md-3 mb-4">
                         <i class="fa-brands fa-html5"></i>
-                        <h4>Html5</h4>
-                        <p class="line-clamp4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et fugit,
-                            voluptatibus veritatis ad esse blanditiis.</p>
-                        <button class="btn btn-primary">Daha Fazla</button>
+                        <h4 class="boldstyle">Html5</h4>
+                        <p class="line-clamp4">HTML (Hypertext Markup Language), web sayfalarının yapısını ve içeriğini
+                            tanımlamak için kullanılan standart bir işaret dilidir.</p>
+                        <a href="https://www.w3schools.com/html/" class="btn btn-primary">Daha Fazla Bilgi Al</a>
                     </div>
                     <div class="text-center col-12 col-md-3 mb-4">
                         <i class="fa-brands fa-css3-alt text-danger"></i>
-                        <h4>CSS</h4>
-                        <p class="line-clamp4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et fugit,
-                            voluptatibus veritatis ad esse blanditiis.</p>
-                        <button class="btn btn-primary">Daha Fazla</button>
+                        <h4 class="boldstyle">CSS</h4>
+                        <p class="line-clamp4">CSS, web sayfalarının görüntü ve düzenini kontrol etmek için kullanılan
+                            bir stil dilidir. HTML'in yanında kullanılır.
+                        </p>
+                        <a href="https://www.w3schools.com/css/default.asp" class="btn btn-primary">Daha Fazla Bilgi
+                            Al</a>
                     </div>
                     <div class="text-center col-12 col-md-3 mb-4">
                         <i class="fa-brands fa-square-js text-success"></i>
-                        <h4>JavaScript</h4>
-                        <p class="line-clamp4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et fugit,
-                            voluptatibus veritatis ad esse blanditiis.</p>
-                        <button class="btn btn-primary">Daha Fazla</button>
+                        <h4 class="boldstyle">JavaScript</h4>
+                        <p class="line-clamp4">JavaScript, HTML ve CSS ile birlikte World Wide Web'in temel
+                            teknolojilerinden biri olan programlama dilidir.
+                        </p>
+                        <a href="https://www.w3schools.com/js/default.asp" class="btn btn-primary">Daha Fazla Bilgi
+                            Al</a>
                     </div>
                     <div class="text-center col-12 col-md-3 mb-4">
                         <i class="fa-brands fa-react"></i>
-                        <h4>React JS</h4>
-                        <p class="line-clamp4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et fugit,
-                            voluptatibus veritatis ad esse blanditiis.</p>
-                        <button class="btn btn-primary">Daha Fazla</button>
+                        <h4 class="boldstyle">React JS</h4>
+                        <p class="line-clamp4">React JS, Facebook tarafından geliştirilen açık kaynaklı bir JavaScript
+                            kütüphanesidir. Web için kullanılır.</p>
+                        <a href="https://www.w3schools.com/react/default.asp" class="btn btn-primary">Daha Fazla Bilgi
+                            Al</a>
                     </div>
                 </div>
             </div>
         </section>
-    <!--messages end-->
+        <!--messages end-->
 
-    <!--parallax start-->
-    <section id="parallax">
-        <div class="container">
-            <div class="row">
-                <h2 class="myHeading">Haberler</h2>
-                <p class="line-clamp20">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officiis suscipit delectus quod dolorum labore, sit dolor vel architecto omnis cupiditate repellendus aliquam sunt enim quasi officia reiciendis, aspernatur laborum hic.
-                Provident error reiciendis tempora porro eos fuga eveniet obcaecati et quidem non labore consequatur officiis veniam fugit, recusandae quisquam delectus suscipit tenetur. Tempora delectus natus, pariatur asperiores mollitia sapiente voluptatem.
-                Alias id perferendis aspernatur, omnis sunt praesentium cupiditate magni voluptatibus pariatur ipsum inventore, molestiae blanditiis ratione eos magnam possimus. Perspiciatis temporibus eius facere commodi sed ipsa velit veritatis sint eligendi!
-                Ex assumenda adipisci totam nisi repellat aliquam molestias optio, porro libero iusto officia distinctio ab neque eum dolores temporibus! Aliquam consequuntur recusandae nihil quia quas ipsa, nobis quibusdam reiciendis possimus!
-                Id, rem nihil. Culpa impedit labore non, unde iusto nulla iste reprehenderit veritatis, voluptas illum id deserunt eaque, optio nesciunt excepturi facere dolores. Velit, explicabo totam. Omnis voluptates doloremque optio.
-                Amet, assumenda! Culpa rerum perspiciatis voluptatibus sunt labore laboriosam ipsam, obcaecati ducimus suscipit. Odit, ad sequi in nulla nisi nobis totam id minus. Laborum vero voluptatem nemo atque, dolor temporibus.
-                Ex quos, nobis sapiente praesentium suscipit fugiat ratione corrupti reprehenderit quidem? Alias neque distinctio, veritatis, laborum possimus soluta et repellat modi hic quia optio totam nulla nobis ipsum architecto ex?
-                Obcaecati delectus molestias officiis dolore aut vitae laboriosam necessitatibus accusamus, itaque deserunt ipsum, inventore, veritatis sint repellendus repudiandae. Nam aut dolor velit dolores commodi fugiat et nihil assumenda voluptatem necessitatibus!
-                Voluptates id neque repellat dolore quod dolores eligendi fugiat, ipsa officiis repudiandae, saepe aliquid, nisi praesentium nobis? Est doloribus aperiam, quos sequi et minima expedita inventore cum aliquid, dolorem architecto.
-                Expedita deleniti sunt ipsum maiores et quisquam quam fuga vel. Excepturi sequi quam mollitia aliquid, maiores consequatur magnam earum, labore numquam sapiente ipsa totam temporibus repellendus eaque nulla, recusandae reiciendis.
-                Mollitia iure, veniam fugiat molestias magnam nostrum quasi dolorum quis. Voluptates iure beatae quas consequatur voluptas possimus temporibus inventore assumenda nobis, dolorum dolor doloremque, repellat dolores expedita praesentium harum necessitatibus!
-                Ut quidem, dignissimos magni accusamus error eaque doloribus fugit suscipit, aliquid perspiciatis atque architecto repellendus quis quos enim cum saepe placeat quae temporibus ipsum numquam nobis. Perferendis eum cumque at.</p>
-                <a class="btn btn-primary">Daha fazla</a>
+        <!--parallax start-->
+        <section id="parallax">
+            <h2 class="text-center boldstyle"><i class="fa-brands fa-pagelines fa-2xs"></i>Hakkımızda<i
+                    class="fa-brands fa-pagelines fa-2xs"></i></h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <h3 class="text-center">Biz Kimiz ?</h3>
+
+                        <ol class="boxAbout">
+                            <li>Firmamız, XYZ sektöründe lider bir konumda bulunan yenilikçi bir şirkettir.</li>
+                            <li> Yılların tecrübesi ve uzman ekibimizle müşterilerimize en kaliteli hizmeti sunmaktayız.
+                            </li>
+                            <li> Misyonumuz, müşterilerimizin ihtiyaçlarını karşılamak için yenilikçi çözümler üretmek
+                                ve en
+                                üst düzeyde müşteri memnuniyetini sağlamaktır.</li>
+                            <li>Değerlerimiz arasında dürüstlük, güvenilirlik ve sürekli gelişim yer almaktadır.</li>
+                            <li>Müşterilerimizin başarıları bizim önceliğimizdir ve onların hedeflerine ulaşmaları için
+                                çalışırız.</li>
+                            <li>Geniş bir ürün ve hizmet yelpazesi sunarak müşterilerimize tam çözümler sunmayı
+                                hedeflemekteyiz.</li>
+                            <li> Takımımız, alanında uzmanlaşmış profesyonellerden oluşur ve sürekli olarak sektördeki
+                                gelişmeleri takip eder.</li>
+                            <li>Kalite standartlarına olan bağlılığımızla, müşterilerimize en iyi ürünleri ve hizmetleri
+                                sunmaktan gurur duyuyoruz.</li>
+                            <li> İnovasyon ve teknolojiye olan tutkumuzla, müşterilerimizin rekabet avantajını
+                                artırmalarına
+                                yardımcı oluyoruz.</li>
+                            <li>Müşteri odaklı yaklaşımımızla, uzun vadeli iş ilişkileri kurmayı ve müşterilerimizin
+                                başarısına katkıda bulunmayı amaçlıyoruz.</li>
+                        </ol>
+
+                    </div>
+                    <div class="col-6">
+                        <h3 class="text-center">Neler Yapıyoruz ? </h3>
+                        <ol class="boxAbout2">
+                            <li>Müşterilerimize özelleştirilmiş çözümler sunarak ihtiyaçlarını en iyi
+                                şekilde karşılıyoruz.</li>
+                            <li>Stratejik danışmanlık hizmetleriyle işletmelerin büyüme potansiyelini artırıyoruz.
+                                İnovasyon ve Ar-Ge çalışmalarıyla yeni ürün ve hizmetler geliştiriyoruz.</li>
+                            <li> Dijital pazarlama ve marka yönetimi alanında uzmanlaşıyoruz</li>
+                            <li> Yazılım ve uygulama geliştirme konusunda özelleştirilmiş çözümler sunuyoruz.</li>
+                            <li> Eğitim ve danışmanlık programlarıyla müşterilerimizin yeteneklerini geliştirmelerine
+                                destek
+                                oluyoruz.</li>
+                            <li> Kurumsal kimlik tasarımı ve marka stratejileriyle müşterilerimizin benzersiz bir kimlik
+                                oluşturmalarına yardımcı oluyoruz.</li>
+                            <li>İş süreçlerinin iyileştirilmesi ve verimliliğin artırılması için danışmanlık hizmetleri
+                                sunuyoruz.</li>
+                            <li>Mobil uygulama ve mobil ticaret çözümleriyle müşterilerimizin mobil platformlarda
+                                başarılı
+                                olmalarını sağlıyoruz.</li>
+                            <li>Veri analitiği ve raporlama hizmetleriyle müşterilerimize stratejik karar alma
+                                süreçlerinde
+                                destek sağlıyoruz.</li>
+                            <li> Web tasarımı ve geliştirme hizmetleri sunuyoruz.</li>
+
+                        </ol>
+                    </div>
+
+
+
+
+                </div>
             </div>
-        </div>
-    </section>
-     <!--parallax end-->
+        </section>
+        <!--parallax end-->
+
+        <!--newspaper start-->
+        <section id="newspaper">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center "><i class="fa-brands fa-pied-piper fa-2xs"></i>Haberler<i
+                            class="fa-brands fa-pied-piper fa-2xs"></i></h2>
+
+
+                    <!-- newspaper -1 -->
+                    <div class="col-4">
+                        <div class="blog-card blog-card-blog">
+                            <div class="blog-card-image">
+                                <a href="#"> <img class="img" src="/img/newspaper-1.jpg">
+                                </a>
+                                <div class="ripple-cont"></div>
+                            </div>
+                            <div class="blog-table">
+                                <h6 class="blog-category blog-text-success"><i class="far fa-newspaper"></i> Cumhuriyet
+                                </h6>
+                                <h4 class="blog-card-caption">
+                                    <a
+                                        href="https://www.cumhuriyet.com.tr/ekonomi/ziraat-muhendisleri-odasi-izmir-subesi-baskani-cakici-onlem-alinmazsa-fiyatlar-ucacak-2094939?utm_medium=Kategori%20Sayfasi&utm_source=Cumhuriyet&utm_campaign=Kategori%20Sayfasi">Ziraat
+                                        Mühendisleri : Önlem alınmazsa fiyatlar uçacak</a>
+                                </h4>
+                                <p class="blog-card-description paragraf1">6 Şubat depremleri sonrası Türkiye genelinde
+                                    gıda krizi yaşanabileceğini söyledi. Afet bölgesinin ülkedeki üretimin yüzde 15’ini
+                                    karşıladığını hatırlatan Çakıcı, “Yaraları hızla saramazsak, et, pamuk, domates
+                                    başta olmak üzere pek çok sebzede sorunlar yaşanacak”.</p>
+                                <div class="ftr">
+                                    <div class="stats"> <i class="far fa-clock"></i> 10 min </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- newspaper -1 -->
+
+                    <!-- newspaper -2 -->
+                    <div class="col-4">
+                        <div class="blog-card blog-card-blog">
+                            <div class="blog-card-image">
+                                <a href="#"> <img class="img" src="/img/newspaper-2.jpg">
+                                </a>
+                                <div class="ripple-cont"></div>
+                            </div>
+                            <div class="blog-table">
+                                <h6 class="blog-category blog-text-success"><i class="far fa-newspaper"></i> BBC News
+                                </h6>
+                                <h4 class="blog-card-caption">
+                                    <a href="https://www.bbc.com/news/science-environment-66049330">Milky Way: Icy
+                                        observatory reveals 'ghost particles'</a>
+                                </h4>
+                                <p class="blog-card-description paragraf1">An astronomical detector buried in Antarctic
+                                    ice has provided a view of our Galaxy that has never been seen before.
+                                    The blurry, extraordinary image is of the Milky Way, but it is composed of the
+                                    "ghostly" particles that are emitted by the cibo.
+                                </p>
+                                <div class="ftr">
+
+                                    <div class="stats"> <i class="far fa-clock"></i> 14 min </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- newspaper -2 -->
+
+                    <!-- newspaper -3 -->
+                    <div class="col-4">
+                        <div class="blog-card blog-card-blog">
+                            <div class="blog-card-image">
+                                <a href="#"> <img class="img" src="/img/newspaper-3.jpg">
+                                </a>
+                                <div class="ripple-cont"></div>
+                            </div>
+                            <div class="blog-table">
+                                <h6 class="blog-category blog-text-success"><i class="far fa-newspaper"></i> Dünya
+                                    Gazetesi</h6>
+                                <h4 class="blog-card-caption">
+                                    <a
+                                        href="https://www.dunya.com/dunya/fransadaki-protestolar-belcikaya-sicradi-yuzlerce-gozalti-sokaga-cikma-yasagi-haberi-697122">Fransa'daki
+                                        protestolar Belçika'ya sıçradı!</a>
+                                </h4>
+                                <p class="blog-card-description paragraf1">Fransa’nın başkenti Paris’in banliyölerinden
+                                    Nanterre'de bir trafik polisinin 17 yaşındaki bir genci öldürmesi sonrası patlak
+                                    veren protestolar Belçika'ya da sıçradı. 667
+                                    kişinin gözaltına alındığı açıklandı.Belçika'da gözaltı sayısının 27 olduğu
+                                    öğrenildi.</p>
+                                <div class="ftr">
+                                    <div class="stats"> <i class="far fa-clock"></i> 8 min </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- newspaper -3 -->
+                </div>
+            </div>
+        </section>
+        <!--newspaper end-->
+
+        <!--blog start-->
+        <section id="blog">
+            <div class="container">
+                <div class="row">
+                    <h2 class="boldstyle text-center p-2">Blog</h2>
+
+                    <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <img class="card-img-top" src="/img/blog-1.jpg" alt="Title">
+                            <div class="card-body">
+                                <h4><a href="https://www.zionadventurephotog.com/" class="card-title">Zion Adventure
+                                        Photog</a></h4>
+                                <p class="card-text p-3 line-clamp8">Arika'nın fotoğraf portfolyosunu sergilemek ve Zion
+                                    bölgesindeki uzmanlığını ortaya koymak. Böylece, Arika için blog yazarak para
+                                    kazanmak mümkün. Blogun yeşil ve sarı tonlarındaki keyifli renk şeması, doğayı ve
+                                    güneş ışığını çağrıştırıyor.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <img class="card-img-top" src="/img/blog-2.jpg" alt="Title">
+                            <div class="card-body">
+                                <h4> <a href="https://www.mrsspacecadet.com/" class="card-title ">Mrs. Space Cadet </a>
+                                </h4>
+                                <p class="card-text p-3 line-clamp8"> "Hikayem" sayfasında, mükemmel maraton hazırlığı
+                                    maceraları haricinde koşu temalı içerikler sunan online bir mecra bulamadığını
+                                    anlatıyor. Bu durum karşısında, "hayattaki zorlukları koşa koşa aşıyoruz" sloganına
+                                    sahip son derece özgün bloğunu oluşturmuş.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <img class="card-img-top" src="/img/blog-3.jpg" alt="Title">
+                            <div class="card-body">
+                                <h4> <a href="https://www.lizzyhadfield.com/" class="card-title ">Lizzy Hadfield </a>
+                                </h4>
+                                <p class="card-text p-3 line-clamp8">Lizzy, sitesindeki ızgara düzenini uyumlu bir
+                                    görsel dille doldurarak yazılara ve yumuşak renkli fotoğraflara yer veriyor. Bu
+                                    düzen, farklı yazıların tam ekran kaydırma düzeninde birleştirilmesiyle mobilde de
+                                    muhteşem görünüyor. İyi bir iş çıkarmış gibi görünüyor. Bu siteyi ziyaret ederek
+                                    Lizzy hakkında daha çok bilgi edinebilirsiniz.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+                        <div class="card">
+                            <img class="card-img-top" src="/img/blog-4.jpg" alt="Title">
+                            <div class="card-body">
+                                <h4> <a href="https://www.mikaelareuben.com/" class="card-title ">Mikaela Reuben </a>
+                                </h4>
+                                <p class="card-text p-3 line-clamp8">Bu gıda ve beslenme danışmanlığı sitesine gelen
+                                    ziyaretçileri, Mikaela'nın güneş vuran ağaçlar altında bahçesinde çalışırken
+                                    çekilmiş bir videosu karşılıyor.Sade ve şık tasarım, profesyonel tarif
+                                    fotoğraflarını ön plana çıkarıyor ve her bir fotoğraf, ziyaretçileri tarifin
+                                    tamamına yönlendiren düğme görevi görüyor. </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+        </section>
+        <!--blog end-->
+
     </main>
     <!--end main codes-->
+
+    <!--Contanct Start-->
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <iframe class="p-3" width="520" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+                    id="gmap_canvas"
+                    src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Vodafone%20Park%20Istanbul+(My%20Web%20Site)&amp;t=p&amp;z=15&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                    href='https://maps-generator.com/'></a>
+
+            </div>
+            <div class="col-6">
+                <form class="p-3">
+                    <h3 class="text-center">İletişim</h3>
+                    <div class="row">
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="First name">
+                      </div>
+                      <div class="col">
+                        <input type="text" class="form-control" placeholder="Last name">
+                      </div>
+                    </div>
+                  </form>
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Mesajınız</label>
+                    <textarea class="form-control p-3" id="exampleFormControlTextarea1" rows="3" style="width: 650px; height: 200px;"></textarea>
+                    <button class="btn btn-primary p-2 m-2">Gönder</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <!--Contanct End-->
 
     <!--start footer codes-->
     <footer id="footer_id" class="bg-dark">
