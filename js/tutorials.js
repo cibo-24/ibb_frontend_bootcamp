@@ -67,9 +67,7 @@ console.log(number1*number2);
 console.log(number1/number2);
 console.log(number1%number2);
 
-// cast
-// Number
-// String()
+
 
 // var userData = Number(prompt('Lütfen Sayı Giriniz:')); // String tipi numbera çevirdik (Number)
 // console.log(userData + 45 ); // string olduğu için toplama yapmaz.  
@@ -102,3 +100,44 @@ console.log(Math.sin(45)); // tanjan kotanjan
 console.log(Math.random()*9+1); // random sayılar üretir.
 console.log(Math.round(Math.random()*9+1));
 
+
+// Number
+var sayi = 15000;
+console.log(sayi);
+
+var sayi2 = 1.5E+4; // Bilimsel gösterimi
+console.log(sayi2);
+
+// binary,octal,decimal,hexadecimal nedir ?
+
+var binary = 0b00011;           // 0 ve 1 lerden oluşan sayılardır.
+console.log(binary);
+
+// octal :  0-1-2-3-4-5-6-7 
+var octal = 0o7612; 
+console.log(octal);
+
+// decimal : 
+var decimal = 123456;
+console.log(decimal);
+
+// hexadecimal : 0-1-2-3-4-5-6-7-8-9-A-B-C-D-F
+var hexadecimal = 0xffa;
+console.log(hexadecimal); // herhangi bir sayiyi onluk tabana çevirir.
+
+
+// Cast : Bir sayiyi stringe, bir stringi sayiya 
+// database, port, api işlemleri string olarak gelir.
+// Number() ile parseInt() arasında ki fark nedir ?
+// String() data.toString arasında ki fark nedir ?
+
+console.log(Number('10')+10); // burada numbera çevirdik.
+console.log(parseInt("10")+10);
+
+console.log(String(30)+10); // stringe çevirdik.
+
+var number = 10;
+console.log(number.toString() + 10 ); // fonksiyon kullanırken parantez kullanmalıyız. toString()
+
+// var, let, const
+// string
