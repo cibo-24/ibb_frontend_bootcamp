@@ -140,4 +140,100 @@ var number = 10;
 console.log(number.toString() + 10 ); // fonksiyon kullanırken parantez kullanmalıyız. toString()
 
 // var, let, const
+var data1 = 11;
+console.log(data1);
+
+var data1 = 22;
+console.log(data1);
+
+
+let data2= 33;
+console.log(data2);
+
+// let data2= 33; >> aynı değişken ismi veremeyiz. let ile var arasında ki fark budur.
+// console.log(data2);
+
+let data3 = 33;
+data3 = 44; // sonradan datayı değiştirebiliriz
+console.log(data3);
+
+const data4= 55;
+// data4= 66; >> const veri tipini sonradan değiştiremeyiz. let ile const arasındaki fark budur.
+console.log(data4);
+
 // string
+
+let str = "js OGreniyorum js"; // boşluklarda bir karakterdir.
+console.log(str);
+console.log(str.length); // kaç harf olduğunu gösterir.
+console.log(str.trim()); // başında ki ve sonundaki boşlukları alır.
+console.log(str.trim().length);
+console.log(str.toLowerCase()); // hepsini küçük karakter yapar
+console.log(str.toUpperCase());
+console.log(str.charAt(0)); // 
+console.log(str.indexOf('js')); // baştan veriyi arar.
+console.log(str.lastIndexOf('js')); // sondan arayarak bulmaya yarar.
+console.log(str.concat('sona')); // en sona veri ekler.
+console.log(str.replace(str,'degistir')); // veriyi değiştirir.
+console.log(str.substring(1)); // 1. indexten sonra parçalama işlemi
+console.log(str.substring(0,4)); // aralık olarak parçalama işlemi
+
+//////////////////////////////////////////////////////////////////////
+// Function
+
+
+/*
+tekrar yapmak istemiyorsak
+kod fazlalağından kurtulmak istiyorsak
+zamandan tasarruf sağlar
+*/
+
+
+// Function(Normal)
+
+// parametresiz ve returnsuz function
+function deneme1 (){
+    console.log("deneme");
+}
+deneme1();  
+
+// Parametreli function
+function deneme2 (adi){ // Parametre
+    console.log('deneme' + adi);
+}
+deneme2('Kenan'); // argüman : 'Kenan'
+
+// Returnlu function
+function deneme3 (){
+    return 'deneme';
+}
+let result12121 = deneme3();
+console.log(result12121);
+
+// returnlu ve parametreli function
+function deneme4(soyadi){
+    return 'deneme66';
+}
+
+let result01 = deneme4("Cibooglu");
+console.log(result01);
+
+
+/////////////////////////////////////////////////
+// Anonymous (Function)
+// bunların nedeni kısaltmak içindir.
+
+let anonymous = function(){ // >> anonymous function
+
+}
+
+// Arrow (Function) İş Dünyasında arrow kullanılır
+
+let arrow = () => { // >> arrow function
+
+}
+
+// Immedia Function ()();
+// condition
+// loop
+// Örnekler
