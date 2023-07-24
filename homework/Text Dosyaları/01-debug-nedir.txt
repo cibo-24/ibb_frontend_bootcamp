@@ -1,0 +1,11 @@
+1- Debug nedir ?
+
+Debug, yazılım geliştirme sürecinde ortaya çıkan hataları bulma ve düzeltme sürecidir. Programlama hatalarını tespit etmek, sorunların kaynağını belirlemek ve kodda yaşanan hataları düzeltmek için kullanılır.
+
+Debug süreci, bir programın çalışma zamanında adım adım izlenmesini sağlar. Programın çalışırken hangi satırlarda hata verdiğini, değişken değerlerini, döngülerin nasıl çalıştığını veya fonksiyonların hangi sırayla çağrıldığını gözlemlememizi sağlar.
+
+Debug yapmak için çeşitli araçlar ve teknikler mevcuttur. Bunlar arasında hata ayıklama araçları, konsol logları, hata yakalama ve izleme yöntemleri bulunur. Yazılım geliştirme ortamları genellikle bir hata ayıklama modu veya aracı sunar ve bu modda programcılar hataları daha kolay tespit eder ve düzeltir.
+
+Debug yaparken, hataların nedenlerini bulmak, değişkenlerin doğru değerlere sahip olup olmadığını kontrol etmek ve programın beklenen akışını kontrol etmek önemlidir. Programda hatalı olan bölümleri tanımlamak ve düzeltmek için adımları takip etmek önemlidir.
+
+Genel olarak debug, programcının hataları belirleyip düzeltme sürecidir ve yazılımın daha istikrarlı ve hatasız hale gelmesine yardımcı olur.

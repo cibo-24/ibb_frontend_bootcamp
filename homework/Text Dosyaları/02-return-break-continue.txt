@@ -1,0 +1,13 @@
+return break continue ne işe yarar ?
+
+return, break ve continue, programların akışını kontrol etmek için kullanılan ifadelerdir.
+
+return: return ifadesi, bir fonksiyondan değer döndürmek için kullanılır.
+ Örneğin, bir fonksiyonun hesaplama yapması ve sonucu geri döndürmesi gerektiğinde return ifadesi kullanılır. Return ifadesi çalıştığında, fonksiyon sonlanır ve değer dışarıya döndürülür.
+
+
+break: break ifadesi, döngülerin veya switch-case yapısının çalışmasını sonlandırmak için kullanılır.
+ Örneğin, bir döngü içinde belirli bir koşul sağlandığında döngünün sonlanması gerekiyorsa break ifadesi kullanılır. Break ifadesi çalıştığında, içinde bulunduğu döngü veya switch-case yapısı sonlanır ve program akışı bir sonraki satıra geçer.
+
+continue: continue ifadesi, döngülerin çalışmasını sürdürürken belirli bir koşulu atlamak için kullanılır. 
+Örneğin, bir döngü içinde belirli bir şart sağlandığında, o adımda işlem yapmayı atlamak isteniyorsa continue ifadesi kullanılır. Continue ifadesi çalıştığında, o adımdaki işlemleri atlayarak bir sonraki döngü adımına geçilir.

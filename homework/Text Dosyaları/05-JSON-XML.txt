@@ -1,0 +1,18 @@
+// JSON nedir ?
+// XML Nedir ve arasında ki fark nedir ?
+
+  JSON (JavaScript Object Notation), verileri depolamak, iletmek ve paylaşmak için kullanılan bir veri formatıdır. JSON, insanlar ve programlar tarafından okunması ve yazılması kolay olan yapısal bir formata sahiptir. JSON, anahtar-değer çiftleri ve listeleri destekler ve sıkça kullanılan bir veri değişim formatıdır.
+
+XML (Extensible Markup Language), metin tabanlı ve platformdan bağımsız bir veri formatıdır. XML, yapısı ve içeriği tanımlamak için etiketler kullanır ve bu etiketler veriyi yapılandırır. XML, aynı veriyi farklı amaçlar için kullanmak isteyen sistemler arasında veri alışverişi yapmak için yaygın olarak kullanılır.
+
+JSON ve XML arasındaki bazı temel farklar şunlardır:
+
+Sözdizimi: JSON, JavaScript nesnelerini temsil etmek için kullanılan bir sözdizimine sahiptir. XML ise etiketler, açılış ve kapanış işaretleri kullanır. JSON, daha basit ve okunması daha kolay bir yapıya sahiptir.
+
+Veri Boyutu: JSON, verileri daha kompakt bir şekilde temsil eder ve genellikle daha küçük dosya boyutlarına sahiptir. XML, verileri daha uzun bir yapıda depolar ve daha büyük dosya boyutlarına yol açabilir.
+
+Veri Erişimi: JSON, verilere erişimi daha hızlı ve daha kolay hale getirecek anahtar-değer çiftlerini kullanır. XML, verilere erişmek için XPath gibi spesifik sorgu dilleri kullanmayı gerektirebilir.
+
+İşleme ve Uygulama Desteği: JSON, JavaScript tarafından doğrudan desteklenir, bu nedenle JavaScript tabanlı uygulamalar için daha uygun bir seçenektir. XML, birçok programlama dilinde işlenebilir ve desteklenir.
+
+Genel olarak, JSON basit ve hafif bir yapıya sahipken, XML daha esnek ve karmaşık veri yapılarına izin verir. JSON, modern uygulama geliştirme için daha yaygın olarak tercih edilen bir veri formatıdır, ancak XML hala bazı belirli durumlar için uygun olabilir.

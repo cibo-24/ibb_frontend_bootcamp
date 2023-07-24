@@ -1,0 +1,27 @@
+// software  prensible
+
+"Software prensible" terimi, yazılımın anlaşılabilirliği veya anlaşılabilir olma yeteneğini ifade eder. Yazılımın prensible olması, onu geliştiren veya kullanan kişilerin ne işe yaradığını, nasıl çalıştığını ve nasıl kullanıldığını anlamasını kolaylaştırır.
+
+Bir yazılımın prensible olması, birkaç farklı unsura dayanır. İlk olarak, yazılımın kodu anlaşılabilir olmalıdır. Kodun okunabilir ve anlaşılır olması, yazılımın genel yapısını ve mantığını anlamayı kolaylaştırır. İyi yazılmış kod, tutarlılık, açıklama ve iyi adlandırma gibi pratiklerle daha da prensible hale getirilebilir.
+
+// KISS, YAGNI, SOLID, CLEAN CODE, SPAGETTİ CODE, DUMMY CODE
+
+KISS (Keep It Simple, Stupid): KISS, bir programın tasarım ve uygulamasının mümkün olduğunca basit tutulması gerektiğini ifade eden bir prensiptir. Karmaşık ve gereksiz özelliklerden kaçınılmalı, sade ve anlaşılır bir yapı oluşturulmalıdır. Basit bir kod, daha kolay okunur, sürdürülebilir ve hata ayıklanabilir olacaktır.
+
+YAGNI (You Aren't Gonna Need It): YAGNI, gereksiz kod veya özellikler eklemekten kaçınılması gerektiğini ifade eden bir prensiptir. Bir programda şu anda kullanılmayan bir özelliği eklemek yerine, sadece ihtiyaç duyulduğunda ve gerektiğinde yeni özellikler eklemek daha iyidir. Bu şekilde, gereksiz karmaşıklık ve zaman kaybı önlenir.
+
+SOLID: SOLID, beş farklı prensibi birleştiren bir yazılım tasarım prensipleri grubudur. Her bir harf, farklı bir prensibi temsil eder:
+
+Single Responsibility Principle (Tek Sorumluluk Prensibi): Her sınıfın ve modülün yalnızca bir görevi olmalıdır.
+
+Open/Closed Principle (Açık/Kapalı Prensibi): Bir sınıf, değişikliklere kapalı olmalı ancak yeni özellikler eklemek için açık olmalıdır.
+Liskov Substitution Principle (Liskov Yerine Koyma Prensibi): Türeyen sınıflar, temel sınıfların yerine geçebilmelidir.
+Interface Segregation Principle (Arayüz Ayrımı Prensibi): İstemciler, sadece ihtiyaç duydukları arayüzleri kullanabilmelidir.
+Dependency Inversion Principle (Bağımlılık İnversiyonu Prensibi): Soyutlamalara ve arayüzlere bağımlılık olmalı, somut uygulamalara değil.
+Clean Code: Temiz Kod, okunabilir, anlaşılır ve sürdürülebilir olması için yazılmış bir programın niteliklerini ifade eder. İyi bir temiz kod, kod tekrarından kaçınır, açık ve anlaşılır isimler kullanır, gereksiz karmaşıklığı önler ve iyi bir kod düzeniyle yazılmıştır.
+
+Spaghetti Code: Erişilmesi veya anlaşılması zor, karmaşık ve kötü tasarlanmış bir programın kodu için kullanılan bir terimdir. Spaghetti Code, okunması ve sürdürülmesi zor olan, gereksiz döngüler, karışık sıralamalar ve karmaşık kontrol akışları içeren bir kod yapısıdır.
+
+Dummy Code: Dummy Code, gerçek bir işlevi olmayan ve genellikle sadece test veya deneme amaçlı eklenen geçici kod parçacıklarını ifade eder. Dummy Code, geçici olarak kullanılan, gelecekte daha fazla geliştirme veya optimizasyon için yer tutan basit bir kod parçasıdır. Bu kod, genellikle gerçek işlevi olan kodla değiştirilir veya silinir.
+
+// Monad >> bir fonk çıktısı başka fonk girdisi ise monad denir.

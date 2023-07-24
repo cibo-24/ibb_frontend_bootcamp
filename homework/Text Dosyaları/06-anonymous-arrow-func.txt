@@ -1,0 +1,10 @@
+// anonymous function ile arrow function arasındaki fark
+
+Anonymous fonksiyonlar ve arrow fonksiyonlar, JavaScript'te farklı şekillerde fonksiyon tanımlamak için kullanılan iki farklı sözdizimi şeklidir.
+
+Anonymous Fonksiyonlar:
+
+Anonymous fonksiyonlar, isimsiz olarak tanımlanan ve bir değişkene atanan fonksiyonlardır.
+
+Fonksiyon tanımında "function" anahtar kelimesi kullanılır ve bu fonksiyonlar genellikle bir değişkene atanarak kullanılır.
+

@@ -1,0 +1,9 @@
+// FIFO VE LIFO nedir ? : İlk giren ilk çıkar, son giren ilk çıkar
+
+FIFO ve LIFO, veri yapıları veya veri depolama yöntemleridir.
+
+FIFO (First-In, First-Out), ilk giren ilk çıkar anlamına gelir. Bu yöntemde, veri öğeleri sırayla depolanır ve veri sırasına göre işlenir. İlk eklenen veri öğesi, ilk çıkarılma işlemine tabi tutulur. Örneğin, bir kuyruk gibi düşünebilirsiniz. Yeni bir veri öğesi kuyruğun sonuna eklenir ve işlem sırasıyla sıfıra doğru ilerler.
+
+LIFO (Last-In, First-Out), son giren ilk çıkar anlamına gelir. Bu yöntemde, en son eklenen veri öğesi, ilk çıkarılma işlemine tabi tutulur. Bu yöntemde depolanan veri öğeleri, bir yığın (stack) mantığıyla çalışır. Veri öğeleri üst üste eklenir ve en üstteki veri öğesi işlem görür.
+
+FIFO ve LIFO, farklı senaryolarda kullanılır. Örneğin, bir veri akışı sırasında verilerin işlenmesi için FIFO kullanılabilir. Öte yandan, bir geri alma veya geri dönüş işlemi için LIFO kullanılabilir. Her iki yöntem de programlama dillerinde ve veri yapılarında yaygın olarak kullanılmaktadır.
