@@ -1,16 +1,11 @@
-// event  >> Bir Olay Döngüsüdür. Bir olayın gerçekleşmesi başka bir olayın gerçekleşmesine bağlıdır.
+// event : Bir Olay Döngüsüdür. Bir olayın gerçekleşmesi başka bir olayın gerçekleşmesine bağlıdır.
+
+
 let eventFunction=()=>{
     alert('onclick');
   }
 
 
-
-  
-  
-  
-  
-  
-  // listener
   
   
   
